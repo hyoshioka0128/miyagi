@@ -1,0 +1,14 @@
+yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+
+name: miyagi
+services:
+  user-service:
+    project: ./src/user-service
+    module: app/user-service
+    language: java
+    host: containerapp
+  web:
+    project: ./ui-nextjs
+    dist: build
+    language: js
+    host: containerapp

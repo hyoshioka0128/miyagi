@@ -13,10 +13,6 @@ import java.util.List;
 /**
  * Implementation of the user profile service
  */
-@Slf4j
-@Service
-@Transactional
-@Qualifier("customeruserprofile")
 public class CustomerUserProfileService implements UserProfileService {
     private final TopicProducer topicProducer;
     private final UserProfileRepository userProfileRepository;
